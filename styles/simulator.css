@@ -1,0 +1,51 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public License,
+ * v. 2.0. If a copy of the MPL was not distributed with this file, You can
+ * obtain one at http://mozilla.org/MPL/2.0/. OpenMRS is also distributed under
+ * the terms of the Healthcare Disclaimer located at http://openmrs.org/license.
+ *
+ * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
+ * graphic logo is a trademark of OpenMRS Inc.
+ */
+
+#casereport-simulator {
+  display: none;
+}
+
+@keyframes blinker {
+  75% {
+    opacity: 0;
+  }
+}
+
+#blinker {
+  animation: blinker 0.7s linear infinite;
+}
+
+#console {
+    max-height:520px;
+    overflow-y: auto;
+    background-color: #29446b;
+    color: #b4b4b4;
+    border: inset #00a4e4 2px;
+    line-height: 1.2;
+    font-size: small;
+    font-family: 'Courier New';
+    padding: 4px
+}
+
+.label {
+    font-weight: bold;
+}
+
+.error-msg {
+    color: #ff5913;
+}
+
+.success-msg {
+    color: #00cc00;
+}
+
+.warning-msg {
+    color: #ffde11;
+}
